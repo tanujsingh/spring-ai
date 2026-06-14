@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/multiple-llms" />
           </set>
         </option>
+        <option name="myGradleHome" value="/usr/local/Cellar/gradle/9.5.1/libexec" />
       </GradleProjectSettings>
     </option>
   </component>
