@@ -12,7 +12,7 @@ public class AudioUtil {
     public static void writeMP3ToFile(byte[] mp3Bytes, String filePath) {
         try (FileOutputStream fos = new FileOutputStream(filePath)) {
             fos.write(mp3Bytes);
-            log.info("MP3 file written to: " + filePath);
+            log.info("MP3 file written to: {}", filePath);
         } catch (IOException e) {
             log.error("Error writing MP3 file: {}  " , e.getMessage(), e);
         }

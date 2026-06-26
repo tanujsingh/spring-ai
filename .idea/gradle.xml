@@ -5,6 +5,7 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="azul-25" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -15,7 +16,6 @@
             <option value="$PROJECT_DIR$/multiple-llms" />
           </set>
         </option>
-        <option name="myGradleHome" value="/usr/local/Cellar/gradle/9.5.1/libexec" />
       </GradleProjectSettings>
     </option>
   </component>
