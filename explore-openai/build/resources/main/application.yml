@@ -9,6 +9,13 @@ spring:
       chat:
         options:
           model: gpt-5.4-mini
+
+logging:
+  level:
+    org:
+      springframework:
+        ai.chat.client.advisor.SimpleLoggerAdvisor: DEBUG
+
 weather:
   api-key :
   api-url : http://api.weatherapi.com/v1

@@ -121,4 +121,21 @@ public class PromptController {
         var responseSpec = chatClient.prompt(prompt).call();
         return responseSpec.content();
     }
+
+    @PostMapping("/v1/prompts/{language}")
+    public String promptsByCodingLanguage (
+            @PathVariable String language,
+            @RequestBody UserInput userInput
+    ) {
+        var requestSpec = chatClient
+                .prompt()
+                .user(userInput.prompt())
+                .system(promptSystemSpec ->
+                        promptSystemSpec.text(systemText)
+                                .param("language", language));
+
+        var responseSpec = requestSpec.call();
+
+        return responseSpec.content();
+    }
 }
